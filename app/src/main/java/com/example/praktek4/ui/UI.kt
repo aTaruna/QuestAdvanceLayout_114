@@ -34,18 +34,16 @@ fun Activity(modifier: Modifier){
     Column (modifier = Modifier.padding(top=100.dp)
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-        ){
-        Card(//(modifier = Modifier.fillMaxSize(1f),
-        colors = CardDefaults.cardColors(
-            containerColor = Color.Black
-        )){
-        Text(stringResource(R.string.univ),
-            fontSize = 22.sp,
-            color = Color.Cyan)}
-        Text(stringResource(R.string.prodi),
+        ) {
+        Text(
+            stringResource(R.string.prodi),
             fontSize = 35.sp,
-            fontWeight = FontWeight.Bold)
-
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            stringResource(R.string.univ),
+            fontSize = 22.sp
+        )
         Spacer(modifier = Modifier.height(25.dp))
         Card (modifier = Modifier
             .fillMaxWidth(1f)
