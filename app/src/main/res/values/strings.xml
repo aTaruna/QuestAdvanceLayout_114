@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Praktek4</string>
-    <string name="prodi">INFORMASI TEKNOLOGI</string>
-    <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="prodi">TI</string>
+    <string name="univ">UMY</string>
     <string name="nama">Saya Guweh</string>
     <string name="alamat">Rumah</string>
     <string name="copy">Copyright</string>
