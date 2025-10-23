@@ -35,7 +35,8 @@ fun Activity(modifier: Modifier){
         horizontalAlignment = Alignment.CenterHorizontally
         ){
         Text(stringResource(R.string.univ),
-            fontSize = 22.sp)
+            fontSize = 22.sp,
+            color = Color.Cyan)
         Text(stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
