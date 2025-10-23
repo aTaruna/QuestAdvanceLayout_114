@@ -47,13 +47,8 @@ fun Activity(modifier: Modifier){
                 containerColor = Color.DarkGray
             )){
             Row (){
-                val gambar = painterResource(id = R.drawable.logoumy)
-                Image(
-                    painter = gambar,
-                    contentDescription = "gambar",
-                    modifier = Modifier.size(100.dp).padding(5.dp)
-                )
-                Spacer(modifier = Modifier.width(30.dp))
+
+
                 Column (){
                     Text(
                         stringResource(R.string.nama),
@@ -69,6 +64,13 @@ fun Activity(modifier: Modifier){
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
+                Spacer(modifier = Modifier.width(30.dp))
+                val gambar = painterResource(id = R.drawable.logoumy)
+                Image(
+                    painter = gambar,
+                    contentDescription = "gambar",
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
             }
         }
         Box(
