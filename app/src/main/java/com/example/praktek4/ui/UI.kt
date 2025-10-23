@@ -34,11 +34,12 @@ fun Activity(modifier: Modifier){
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
         ){
+        Text(stringResource(R.string.univ),
+            fontSize = 22.sp)
         Text(stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
-        Text(stringResource(R.string.univ),
-            fontSize = 22.sp)
+
         Spacer(modifier = Modifier.height(25.dp))
         Card (modifier = Modifier
             .fillMaxWidth(1f)
@@ -47,8 +48,13 @@ fun Activity(modifier: Modifier){
                 containerColor = Color.DarkGray
             )){
             Row (){
-
-
+                val gambar = painterResource(id = R.drawable.logoumy)
+                Image(
+                    painter = gambar,
+                    contentDescription = "gambar",
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
                 Column (){
                     Text(
                         stringResource(R.string.nama),
@@ -64,13 +70,6 @@ fun Activity(modifier: Modifier){
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
-                Spacer(modifier = Modifier.width(30.dp))
-                val gambar = painterResource(id = R.drawable.logoumy)
-                Image(
-                    painter = gambar,
-                    contentDescription = "gambar",
-                    modifier = Modifier.size(100.dp).padding(5.dp)
-                )
             }
         }
         Box(
