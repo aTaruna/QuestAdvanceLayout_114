@@ -3,7 +3,9 @@
     <string name="prodi">TEKNOLOGI INFORMASI</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
     <string name="nama">Saya Guweh</string>
-
+    <string name="namanual">Isi nama disini</string>
+    <string name="alamanual">Isi alamat disini</string>
+    <string name="nohp">Nomor HP</string>
     <string name="alamat">Rumah</string>
     <string name="copy">Copyright</string>
 </resources>
