@@ -35,7 +35,7 @@ fun Activity(modifier: Modifier){
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
         ){
-        Card(modifier = Modifier.fillMaxSize(1f),
+        Card(//(modifier = Modifier.fillMaxSize(1f),
         colors = CardDefaults.cardColors(
             containerColor = Color.Black
         )){
