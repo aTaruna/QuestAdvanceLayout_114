@@ -49,7 +49,7 @@ fun Activity(modifier: Modifier){
             .fillMaxWidth(1f)
             .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
+                containerColor = Color.Black
             )){
             Row (){
                 val gambar = painterResource(id = R.drawable.logoumy)
