@@ -2,6 +2,7 @@ package com.example.praktek4.ui
 
 import android.app.Activity
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -64,12 +65,15 @@ fun Activity(modifier: Modifier){
                     Text(
                         stringResource(R.string.alamat),
                         fontSize = 20.sp,
-                        fontFamily = FontFamily.Cursive,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
         }
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        )
     }
 }
