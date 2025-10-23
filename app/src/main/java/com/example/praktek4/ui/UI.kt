@@ -29,7 +29,8 @@ import androidx.compose.ui.unit.sp
 import com.example.praktek4.R
 
 
-
+val biru=Color(0xFF4169E1)
+val ijo = Color(0xFF228B22)
 
 @Composable
 fun Activity(modifier: Modifier){
@@ -84,7 +85,7 @@ fun Activity(modifier: Modifier){
             .fillMaxWidth(1f)
             .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Blue
+                containerColor = biru
             )){
             Row (){
                 val gambar = painterResource(id = R.drawable.logoumy)
@@ -123,7 +124,7 @@ fun Activity(modifier: Modifier){
             .fillMaxWidth(1f)
             .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Green
+                containerColor = ijo
             )){
             Row (){
                 val gambar = painterResource(id = R.drawable.logoumy)
