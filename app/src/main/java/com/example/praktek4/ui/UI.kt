@@ -37,12 +37,12 @@ fun Activity(modifier: Modifier){
         ) {
         Text(
             stringResource(R.string.prodi),
-            fontSize = 36.sp,
+            fontSize = 35.sp,
             fontWeight = FontWeight.Bold
         )
         Text(
             stringResource(R.string.univ),
-            fontSize = 22.sp
+            fontSize = 20.sp
         )
         Spacer(modifier = Modifier.height(25.dp))
         Card (modifier = Modifier
