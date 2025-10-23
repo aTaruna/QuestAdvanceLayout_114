@@ -29,6 +29,8 @@ import androidx.compose.ui.unit.sp
 import com.example.praktek4.R
 
 
+
+
 @Composable
 fun Activity(modifier: Modifier){
     Column (modifier = Modifier.padding(top=100.dp)
@@ -77,6 +79,7 @@ fun Activity(modifier: Modifier){
             }
         }
         Spacer(modifier = Modifier.height(15.dp))
+        //kartu 2
         Card (modifier = Modifier
             .fillMaxWidth(1f)
             .padding(12.dp),
@@ -93,15 +96,60 @@ fun Activity(modifier: Modifier){
                 Spacer(modifier = Modifier.width(30.dp))
                 Column (){
                     Text(
-                        stringResource(R.string.nama),
+                        stringResource(R.string.namanual),
                         fontSize = 30.sp,
-                        fontFamily = FontFamily.Cursive,
+                        fontFamily = FontFamily.SansSerif,
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
-                        stringResource(R.string.alamat),
+                        stringResource(R.string.alamanual),
                         fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nohp),
+                        fontSize = 15.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
+        Spacer(modifier = Modifier.height(15.dp))
+        //kartu 3
+        Card (modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Green
+            )){
+            Row (){
+                val gambar = painterResource(id = R.drawable.logoumy)
+                Image(
+                    painter = gambar,
+                    contentDescription = "gambar",
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column (){
+                    Text(
+                        stringResource(R.string.namanual),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.SansSerif,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamanual),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nohp),
+                        fontSize = 15.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
                     )
